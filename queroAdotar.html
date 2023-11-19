@@ -179,7 +179,7 @@
   <script>
     document.getElementById('btnEnviarEmail').addEventListener('click', function() {
       const email = document.getElementById('exampleInputEmail1').value;
-      fetch(`https://creative-jalebi-30117a.netlify.app/send-email?email=${email}`)
+      fetch(`https://acolhendopatas.netlify.app/queroadotar/send-email?email=${email}`)
         .then((response) => response.text())
         .then((data) => {
           alert(data); // Exibe um alerta com a resposta do servidor
