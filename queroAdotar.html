@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quero Adotar</title>
+  <link rel="stylesheet" href="queroAdotar.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg" style="background-color: #168aad; height: 100px">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" style="color: #ffffff;"><strong>Acolhendo Patas</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html" style="color: #ffffff;">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#sobre" style="color: #ffffff;">Nossa História</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="processoAdocao.html" role="button" aria-expanded="false" style="color: #ffffff;">
+              Processo de adoção
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" style="color: #ffffff;">Contato</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search" />
+          <button class="btn btn-outline-light" type="submit" style="background-color: #2a6f97; width: 30%;">
+            Buscar
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-form">
+    <h1 class="title-form">Encontre seu novo amigo!</h1>
+
+    <!--Formulário para adotar
+
+      <div class="content-form">
+        <select
+          class="form-select"
+          id="form-especie"
+          aria-label="Default select example"
+        >
+          <option selected>Todas as espécies</option>
+          <option value="dog">Cachorro</option>
+          <option value="cat">Gato</option>
+        </select>
+        <select
+          class="form-select"
+          id="form-sexo"
+          aria-label="Default select example"
+        >
+          <option selected>Todos os sexos</option>
+          <option value="fem">Fêmea</option>
+          <option value="macho">Macho</option>
+        </select>
+        <select
+          class="form-select"
+          id="form-porte"
+          aria-label="Default select example"
+        >
+          <option selected>Todos os portes</option>
+          <option value="pequeni">Pequeno</option>
+          <option value="medio">Médio</option>
+          <option value="grande">Grande</option>
+        </select>
+      </div>
+      <div class="content-form">
+        <button class="btn btn-primary" style="width: 30%">Buscar</button>
+      </div>-->
+    <div class="card-container">
+      <!--Cards    src=".../100px180/"
+        --->
+      <div class="card" style="width: 18rem">
+        <img class="card-img-top custom-img" src="./img/wepik-export-202310170047338MiU.png"
+          alt="Imagem de capa do card" />
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-idade">Idade:</p>
+          <p class="card-raca">Raça: </p>
+          <p class="card-sexo">Sexo: </p>
+          <p class="card-text" style="color: rgb(156, 144, 144)">São Paulo</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalExemplo1">
+            Adotar
+          </button>
+          <!--MODAL-->
+          <div class="modal fade" id="modalExemplo1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel1">Atenção!! </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                  Me informe seu e-mail para darmos continuidade na adoção :) 
+                  <br>
+                  <form>
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+                      <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  <button type="button" id="btnEnviarEmail" class="btn btn-primary">Enviar E-mail</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img class="card-img-top custom-img" src="./img/adorable-cat-relaxing-indoors_23-2150692709.jpg"
+          alt="Imagem de capa do card" />
+        <div class="card-body">
+          <h5 class="card-title">Kiara</h5>
+          <p class="card-idade">Idade:</p>
+          <p class="card-raca">Raça: </p>
+          <p class="card-sexo">Sexo: </p>
+
+          <p class="card-text" style="color: rgb(156, 144, 144)"></p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalExemplo1">
+            Adotar
+          </button>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img class="card-img-top custom-img" src="./img/pug-dog-isolated-white-background.jpg"
+          alt="Imagem de capa do card" />
+        <div class="card-body">
+          <h5 class="card-title">Paçoca</h5>
+          <p class="card-idade">Idade:</p>
+          <p class="card-raca">Raça: </p>
+          <p class="card-sexo">Sexo: </p>
+
+          <p class="card-text" style="color: rgb(156, 144, 144)"></p>
+          <a href="#" class="btn btn-primary">Adotar</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img class="card-img-top custom-img" src="./img/purebred-dog-being-adorable-studio.jpg"
+          alt="Imagem de capa do card" />
+        <div class="card-body">
+          <h5 class="card-title">Zeus</h5>
+          <p class="card-idade">Idade: </p>
+          <p class="card-raca">Raça: </p>
+          <p class="card-sexo">Sexo: </p>
+
+          <p class="card-text" style="color: rgb(156, 144, 144)"></p>
+          <a href="#" class="btn btn-primary">Adotar</a>
+          <script src="./script.js"></script>
+        </div>
+      </div>
+
+
+      
+    </div>
+  </div>
+  <script>
+    document.getElementById('btnEnviarEmail').addEventListener('click', function() {
+      const email = document.getElementById('exampleInputEmail1').value;
+      fetch(`/send-email?email=${email}`)
+        .then((response) => response.text())
+        .then((data) => {
+          alert(data); // Exibe um alerta com a resposta do servidor
+        })
+        .catch((error) => {
+          console.error('Erro ao enviar e-mail:', error);
+        });
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-..."></script>
+</body>
+
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.11/dist/inputmask/inputmask.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.11/dist/inputmask/inputmask.binding.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.11/dist/inputmask/inputmask.numeric.extensions.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.11/dist/inputmask/inputmask.phone.extensions.min.js"></script>
+    <title>Central de Cadastro</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+
+ 
+  </head>
+
+  <body style="background-color: #FBFBFB">
+    <nav
+      class="navbar navbar-expand-lg"
+      style="background-color: #168aad; height: 100px"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" style="color: #ffffff"
+          ><strong>Acolhendo Patas</strong></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" style="color: #ffffff" href="index.html" 
+                >Início</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#sobre" style="color: #ffffff">Nossa História</a>
+            </li>
+            <li class="nav-item nav-justified">
+              <a
+                class="nav-link"
+                href="processoAdocao.html"
+                role="button"
+                aria-expanded="false" style="color: #ffffff"
+              >
+                Processo de adoção
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" style="color: #ffffff">Contato</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Pesquisar"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-light"
+              type="submit"
+              style="background-color: #2a6f97"
+            >
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div style="text-align: center; margin-top: 30px">
+      <h1><b>Central de Cadastro</b></h1>
+    </div>
+
+    <div class="container mt-5">
+      <form>
+        <!-- Informações do Usuário -->
+        <div style="text-align: left; margin-top: 30px; margin-bottom: 20px">
+          <h5><b>Informações do Usuário:</b></h5>
+        </div>
+
+        <!-- Campo Nome -->
+        <div class="row">
+          <div class="col-md-9">
+            <div class="mb-3">
+              <label for="nome" class="form-label"><b>Nome:</b></label>
+              <input
+                type="text"
+                class="form-control"
+                id="nome"
+                placeholder="Informe seu nome"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Campo Idade -->
+          <!-- <div class="col-md-3">
+                    <div class="mb-3">
+                        <label for="Idade:" class="form-label"><b>Idade:</b></label>
+                        <input type="number" class="form-control" id="idade" placeholder="Informe sua idade" required>
+                    </div>
+                </div> -->
+
+          <!-- Campo Estado -->
+          <div class="col-md-3">
+            <label for="estado" class="form-label"><b>Estado:</b></label>
+            <select class="form-select" id="estado" required>
+              <option value="">Selecione o estado</option>
+              <option value="acre">AC</option>
+              <option value="alagoas">AL</option>
+              <option value="amapa">AP</option>
+              <option value="amazonas">AM</option>
+              <option value="bahia">BA</option>
+              ]
+              <option value="ceara">CE</option>
+              <option value="espiritosanto">ES</option>
+              <option value="goias">GO</option>
+              <option value="maranhao">MA</option>
+              <option value="matogrosso">MT</option>
+              <option value="matogrossodosul">MS</option>
+              <option value="minas">MG</option>
+              <option value="para">PA</option>
+              <option value="paraiba">PB</option>
+              <option value="parana">PR</option>
+              <option value="pernambuco">PE</option>
+              <option value="piaui">PI</option>
+              <option value="rj">RJ</option>
+              <option value="riograndenorte">RN</option>
+              <option value="riograndesul">RS</option>
+              <option value="rondonia">RO</option>
+              <option value="roraima">RR</option>
+              <option value="sc">SC</option>
+              <option value="sp">SP</option>
+              <option value="sergipe">SE</option>
+              <option value="tocantins">TO</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Campo Endereço -->
+        <div class="row">
+          <div class="col-md-9">
+            <div class="mb-3">
+              <label for="endereco" class="form-label"><b>Endereço:</b></label>
+              <input
+                type="text"
+                class="form-control"
+                id="endereco"
+                placeholder="Informe seu endereço"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Campo CEP -->
+          <div class="col-md-3">
+            <div class="mb-3">
+              <label for="cep" class="form-label"><b>CEP:</b></label>
+              <input
+                type="number"
+                class="form-control"
+                id="cep"
+                placeholder="Informe seu CEP"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Campo E-mail -->
+        <div class="row">
+          <div class="col-md-9">
+            <div class="mb-3">
+              <label for="email" class="form-label"><b>E-mail:</b></label>
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                placeholder="Informe seu E-mail"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Campo Telefone -->
+
+          <div class="col-md-3">
+            <div class="mb-3">
+              <label for="telefone" class="form-label"><b>Telefone:</b></label>
+              <input
+                type="number"
+                class="form-control"
+                id="telefone"
+                min="0"
+                placeholder="Informe seu telefone"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Informações do Pet -->
+        <div style="text-align: left; margin-top: 30px; margin-bottom: 20px">
+          <h5><b>Informações do Pet:</b></h5>
+        </div>
+
+        <!-- Nome -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="nomepet" class="form-label"><b>Nome:</b></label>
+              <input
+                type="text"
+                class="form-control"
+                id="nomepet"
+                placeholder="Informe o nome do pet"
+                required
+              />
+            </div>
+          </div>
+          <!-- Tipo de pet -->
+          <div class="col-md-3">
+            <label for="pet" class="form-label"><b>Pet:</b></label>
+            <select class="form-select" id="estado" required>
+              <option value="">Selecione o pet</option>
+              <option value="dog">Cachorro</option>
+              <option value="coelho">Coelho</option>
+              <option value="gato">Gato</option>
+              <option value="passarinho">Passarinho</option>
+              <option value="tartaruga">Tartaruga</option>
+              <option value="outro">Outro</option>
+              ]
+            </select>
+          </div>
+
+          <!-- idade -->
+          <div class="col-md-3">
+            <div class="mb-3">
+              <label for="idade:" class="form-label"><b>Idade:</b></label>
+              <input
+                type="number"
+                class="form-control"
+                id="idade"
+                min="0"
+                placeholder="Informe a idade do pet"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Campo Sexo -->
+        <div class="mb-3" style="text-align: center">
+          <label class="form-label"><b>Sexo:</b></label>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="sexo"
+              id="sexo-macho"
+              value="macho"
+              required
+            />
+            <label class="form-check-label" for="sexo-macho">Macho</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="sexo"
+              id="sexo-femea"
+              value="femea"
+              required
+            />
+            <label class="form-check-label" for="sexo-femea">Fêmea</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="sexo"
+              id="sexo-naosei"
+              value="naosei"
+              required
+            />
+            <label class="form-check-label" for="sexo-naosei">Não sei</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="termos" class="form-label"
+            ><b>Eu concordo com os seguintes Termos:</b></label
+          >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="termo1"
+              name="termo1"
+              checked
+              required
+            />
+            <label class="form-check-label" for="termo1">
+              Concordo que meus dados pessoais podem ser usados para análise
+              interna a fim de melhorar produtos e serviços.
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="termo2"
+              name="termo2"
+              checked
+              required
+            />
+            <label class="form-check-label" for="termo6">
+              Declaro ser maior de 18 anos de idade.
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="termo3"
+              name="termo3"
+            />
+            <label class="form-check-label" for="termo3">
+              Concordo em permitir o compartilhamento limitado de meus dados
+              pessoais com parceiros estratégicos para melhorar a experiência do
+              usuário e fornecer serviços personalizados.
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="termo4"
+              name="termo4"
+            />
+            <label class="form-check-label" for="termo4">
+              Estou disposto a receber comunicações de terceiros relacionadas a
+              pets que possam ser de meu interesse, com base nas minhas
+              informações pessoais.
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="termo5"
+              name="termo5"
+            />
+            <label class="form-check-label" for="termo5">
+              Aceito que meus dados pessoais possam ser utilizados para fins de
+              segurança, incluindo a detecção e prevenção de atividades
+              fraudulentas em minha conta.
+            </label>
+          </div>
+        </div>
+
+        <div class="form-check form-switch">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="mySwitch"
+            required
+          />
+          <label class="form-check-label" for="mySwitch"
+            ><b>Li e concordo com os Termos selecionados</b></label
+          >
+        </div>
+
+        <div style="text-align: center">
+          <button type="submit" class="btn btn-success"><b>Salvar</b></button>
+        </div>
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <nav
+      class="navbar navbar-expand-lg"
+      style="background-color: #168aad; height: 100px; margin-top: 3%;"
+    >
+  </body>
+</html>
