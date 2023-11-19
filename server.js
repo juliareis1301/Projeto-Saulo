@@ -5,9 +5,10 @@ const nodemailer = require('nodemailer');
 const PORT = process.env.PORT;
 
 app.use(cors({
-  origin: '*', // ou especifique a origem desejada
-  methods: 'GET',
-}));
+    origin: 'https://creative-jalebi-30117a.netlify.app',
+    methods: 'GET',
+  }));
+  
 
 // Configuração do Nodemailer
 const transporter = nodemailer.createTransport({
