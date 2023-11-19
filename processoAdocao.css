@@ -14,3 +14,15 @@
 .processo-adocao{
     font-size: 1.5rem;
 }
+
+.bots {
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+    gap:10px;
+    
+}
+
+.btn{
+    width: 100%;
+}
